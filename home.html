@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>PET STORE HOME PAGE</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/829/829207.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            z-index: 100;
+            margin-left: -15%;
+        }
+        
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        
+        .nav-list {
+            width: 70%;
+            display: flex;
+        }
+        
+        .login-page {
+            width: 360px;
+            padding: 8% 0 0;
+            margin: auto;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 60px;
+            border-radius: 30px;
+        }
+        
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+        
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav-list li a:hover {
+            color: grey;
+        }
+        
+        .firstsection {
+            background-color: white;
+            height: 300px;
+        }
+        
+        .secondsection {
+            background-color: white;
+            text-align: justify;
+            font-family: Montserrat;
+        }
+        
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 26px 30px;
+        }
+        
+        .secondhalf {
+            width: 30%;
+        }
+        
+        .thirdsection {
+            background-color: white;
+            text-align: justify;
+            font-family: Montserrat;
+        }
+        
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+        
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .text-small {
+            font-size: 20px;
+        }
+        
+        .buy {
+            background-color: #E78909;
+            font-family: Montserrat;
+            font-style: oblique;
+            font: x-large;
+            font-weight: 700;
+            text-transform: uppercase;
+            outline: 0;
+            border: 0;
+            padding: 10px;
+            color: #fff5f5;
+            font-size: 14px;
+            margin-top: 35%;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 10px;
+        }
+        
+        .buy:hover {
+            background: rgb(255, 68, 68);
+        }
+        
+        .pad {
+            padding: 26px 30px;
+        }
+        
+        .column {
+            float: left;
+            width: 10%;
+            padding: 130px;
+            height: 300px;
+        }
+        
+        .row:after {
+            padding: 90px;
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .section {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+        
+        .paras {
+            padding: 65px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .footer {
+            color: cornsilk;
+            text-align: center;
+            margin-top: 1500px;
+            font-family: 'Ubuntu', sans-serif;
+            background: rgb(255, 0, 0);
+            background-blend-mode: darken;
+            height: 30px;
+        }
+        
+        #he1 {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="https://previews.123rf.com/images/distrologo/distrologo1902/distrologo190201220/117628301-pet-shop-logo-design-template-pet-home-logo-design-vector-icon.jpg">
+                <p style="color:#9D5C0A" ;><strong>PET SHOP</strong></p>
+            </div>>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="project_register.html">Registration</a></li>
+            <li><a href="project_login.html">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="firstsection">
+        <div class="firstHalf">
+
+            <marquee behavior="alternate" direction="left">
+                <img src="https://www.cdc.gov/healthypets/images/slider/dog-and-cat.jpg" width="120" height="100" alt="Natural" /> <img src="https://www.crn.com/resources/025c-0f3247198c32-7caef631a12d-1000/pets.jpg" width="120" height="100" alt="Natural"
+                />
+            </marquee>
+            <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Treats-Web-Banner_1366x400_026ed893-7ecb-4951-a494-825fa81fa736_1500x.jpg?v=1634724120" width="100%">
+        </div>
+        <section class="secondsection">
+            <h1 id="he1" style="text-align: center;">PET FOODS</h1>
+            <div class="row">
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/RoyalCaninLabradorRetrieverAdultDryDogFood_510x@2x.jpg?v=1636365978" width=300px height=300px>
+                    <h1>Royal Canin Dry Dog Food</h1>
+                    <h2>&#8377;7,500</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/PedigreeChicken_VegetablesAdultDryDogFood_510x_2x_1f0672c6-5aa7-4243-9109-c0a87dcc45fa_large.jpg?v=1636462229" width=300px height=300px>
+                    <h1>Pedigree Dog Food</h1>
+                    <h2>&#8377;89.5</h2>
+
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://m.media-amazon.com/images/I/71vXhM3XFkL._SL1500_.jpg" width=300px height=300px>
+                    <h1>Orijen Dry Puppy Food</h1>
+                    <h2>&#8377;599</h2>
+
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/762177820002_1_1_abe8bd57-4230-4d42-aba7-a0f02d079808_large.jpg?v=1576683911" width=300px height=300px>
+                    <h1>FruitBlend Bird Food</h1>
+                    <h2>&#8377;450</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/NutBlend_3-25lb_ML_Left_Side_Bag_8874.original-1536x1536_large.jpg?v=1599711838" width=300px height=300px>
+                    <h1>NutBlend Parrot Food</h1>
+                    <h2>&#8377;999</h2>
+
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/Untitleddesign-2020-12-03T163823.426_large.png?v=1606994426" width=300px height=300px>
+                    <h1>vitpoil for Big Parrot</h1>
+                    <h2>&#8377;649</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/5904479001269_ce770b0a-24f7-470f-b864-ad09ceaa809d_large.jpg?v=1576685035" width=300px height=300px>
+                    <h1>Vitapol for Rabbits</h1>
+                    <h2>&#8377;2,450</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/ShebaMaguro_BreamWetCatFood-35g_25e20061-d88d-44aa-aabd-5bd013fd47bc_large.jpg?v=1636437451" width=300px height=300px>
+                    <h1>Sheba Maguro cat Food</h1>
+                    <h2>&#8377;759</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://m.media-amazon.com/images/I/71LvCU-z5eL._SL1500_.jpg" width=300px height=300px>
+                    <h1>Adult Dry Dog Food</h1>
+                    <h2>&#8377;759</h2>
+
+                </div>
+            </div>
+            <section class="thirdsection">
+                <div class="thirdHalf">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Web-Banner-Dog-Food_1366x400px_1500x.jpg?v=1633105227" width="100%">
+                </div>
+                <br>
+                <h1 id="he1" style="text-align: center;">PET TOYS</h1>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0582/8349/1478/products/woodplay-06_1800x1800.jpg?v=1633605262" width=300px height=300px>
+                    <h1>Bone Toys for small Dogs</h1>
+                    <h2>&#8377;300</h2>
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0582/8349/1478/products/Newtoy-48_1800x1800.jpg?v=1635404181" width=300px height=300px>
+                    <h1>Rubber Chew Dog Toy</h1>
+                    <h2>&#8377;350</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0582/8349/1478/products/IMG_9439-1_1800x1800.jpg?v=1633605686" width=300px height=300px>
+                    <h1>Cotton Rope Tug Toy</h1>
+                    <h2>&#8377;320</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0582/8349/1478/products/UF3_Extreme_Kong_Flyer_Lg_1800x1800.jpg?v=1633604818" width=300px height=300px>
+                    <h1>Large Fetch Dog Toy</h1>
+                    <h2>&#8377;1192</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://cdn.shopify.com/s/files/1/0582/8349/1478/products/1-1_e8785cb9-43fe-4617-a8e9-06c5ddec27be_1800x1800.jpg?v=1633604450" width=300px height=300px>
+                    <h1>Cat Toy with Bird Sound</h1>
+                    <h2>&#8377;250</h2>
+
+                </div>
+                <div class="column">
+                    <input class="buy" type="button" value="BUY" onclick="buy()">
+                    <br>
+                    <img src="https://m.media-amazon.com/images/I/918TsN8GjgL._SY450_.jpg" width=300px height=300px>
+                    <h1>Dog Toys for Puppies</h1>
+                    <h2>&#8377;699</h2>
+
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    © 2021 Earth Paws Private Limited. All Rights Reserved.
+                </div>
+            </footer>
+
+
+            <script>
+                function buy() {
+
+                    alert("Order Successfully Placed");
+                }
+            </script>
+
+</body>
+
+
+</html>

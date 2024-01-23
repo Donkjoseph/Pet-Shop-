@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/829/829207.png" type="image/x-icon">
+    <script>
+        function reg() {
+            var a, b, c, d;
+            a = document.getElementById("t1").value;
+            b = document.getElementById("t2").value;
+            c = document.getElementById("t3").value;
+            d = document.getElementById("t4").value;
+            if (a == "") {
+                alert("PLEASE ENTER A NAME");
+            }
+            if (b == "") {
+                alert("PLEASE ENTER A EMAIL ID");
+            }
+            if (c == "") {
+                alert("PLEASE ENTER A USERNAME");
+            }
+            if (d == "") {
+                alert("PLEASE ENTER A PASSWORD");
+            }
+            var e = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var n = /^[A-Za-z]+$/;
+            var p = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (!n.test(a)) {
+                alert("PLEASE ENTER ONLY ALPHABETS IN NAME FIELD!");
+            } else if (!e.test(b)) {
+                alert("INVALID EMAIL ID!");
+            } else if (!n.test(c)) {
+                alert("PLEASE ENTER ONLY ALPHABETS IN USERNAME FIELD!");
+            } else if (!p.test(d)) {
+                alert("'Minimum eight characters, at least one letter and one number!");
+            } else {
+                window.location = "home.html";
+            }
+
+        }
+
+        function clr() {
+            document.getElementById("t1").value = "";
+            document.getElementById("t2").value = "";
+            document.getElementById("t3").value = "";
+            document.getElementById("t4").value = "";
+        }
+    </script>
+</head>
+<style>
+    body {
+        font-family: Calibri, Helvetica, sans-serif;
+        background-color: pink;
+        padding: 10%;
+        background-color: lightblue;
+        background-image: url('https://imgscf.slidemembers.com/docs/1/1/278/pet_shop_simple_powerpoint_template_design_277381.jpg');
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    div {
+        background-color: rgba(247, 242, 242, 0.911);
+        padding: inherit;
+    }
+    
+    .btns button {
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+        font-size: 15px;
+    }
+    
+    .btns button:hover {
+        background-color: #555555;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="btns">
+        <h1>PET SHOP REGISTER</h1>
+        <hr> NAME: <input id="t1" placeholder="ENTER YOUR NAME"><br><br> EMAIL ID: <input id="t2" placeholder="ENTER YOUR EMAIL ID"><br><br> USERNAME: <input id="t3" placeholder="ENTER YOUR USERNAME"><br><br>PASSWORD: <input id="t4" type="password" placeholder="ENTER YOUR PASSWORD"><br><br>
+        <hr>
+        <button onclick="clr()">CLEAR</button>
+        <button onclick="reg()">CREATE</button><br>
+    </div>
+</body>
+
+</html>
